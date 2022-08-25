@@ -67,8 +67,11 @@ class _MyAppState extends State<MyApp> {
                 Album album = snapshot.data!;
 
                 return Text(album.title);
+
               } else if (snapshot.hasError) {
+
                 return Text('${snapshot.error}');
+                
               }
 
               // By default, show a loading spinner.

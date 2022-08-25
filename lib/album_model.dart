@@ -11,9 +11,17 @@ class Album {
     required this.title,
   });
 
-  factory Album.fromJson(Map<String, dynamic> json) {
+  static Album fromJson(Map<String, dynamic> json) {
     return Album(
       userId: json['userId'],
+      id: json['id'],
+      title: json['title'],
+    );
+  }
+
+  static Album fromJsonForMethodPOST (Map<String, dynamic> json) {
+    return Album(
+      userId: json['id'],
       id: json['id'],
       title: json['title'],
     );
