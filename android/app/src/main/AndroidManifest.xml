@@ -1,6 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lesson8_http_request1">
-   <application
+
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
         android:label="lesson8_http_request1"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
